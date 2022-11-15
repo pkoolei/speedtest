@@ -20,12 +20,13 @@ if(check_param($user)==true&&check_param($pass)==true){
     $row=$res->num_rows; //将获取到的用户名和密码拿到数据库里面去查找匹配
     if($row!=0)
     {
+        echo "登录成功";
         header('location:speedtest.html?'."{$user}");
     }
     else
     {
         echo "无权限登录";
-        header('location:index.html');
+        header('refesh:5;location:index.html');
     }
 }
 ?>
