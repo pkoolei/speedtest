@@ -285,10 +285,16 @@ function initUI(){
 			font-size:0.8em;
 		}
 	}
+	#YH{
+		position: fixed;
+		right: 0;
+		top:0;
+	}
 </style>
 <title>广州联通员工测速</title>
 </head>
-<body>
+<body onload="setusername()">
+<h5 id="YH"></h5>
 <h1>广州联通员工测速</h1>
 <div id="testWrapper">
 	<div id="startStopBtn" onclick="startStop()"></div><br/>
