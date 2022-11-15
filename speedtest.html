@@ -14,7 +14,10 @@ function setusername(){
 	var num = url.indexOf("?");
 	var username = url.substr(num+1);;
 	var arr = username.split(",");
-	I("YH").textContent="欢迎"+arr;
+	if (num == -1){
+		location.href='index.html'
+	}
+	I("YH").textContent="欢迎,"+arr;
 };
 
 //INITIALIZE SPEEDTEST
